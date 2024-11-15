@@ -1,0 +1,168 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header button {
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    background-color: #ffffff;
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+/* Main content */
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2, section h3 {
+    color: #4CAF50;
+}
+
+form {
+    margin-top: 1em;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li span {
+    font-size: 0.9em;
+}
+
+/* Overdue tasks */
+li.overdue {
+    background-color: #ffe6e6;
+    border-color: #ffcccc;
+}
+
+li.overdue strong {
+    color: red;
+}
+
+/* Member details */
+#member-name {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 1em;
+}
+
+#task-list li, #received-messages li, #sent-messages li {
+    margin-bottom: 0.5em;
+    padding: 0.8em;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button.complete-btn {
+    padding: 0.5em;
+    font-size: 0.9em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+button.complete-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header, main {
+        padding: 1em;
+    }
+
+    form input, form textarea, form select, form button {
+        font-size: 0.9em;
+    }
+}
