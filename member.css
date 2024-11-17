@@ -1,0 +1,108 @@
+/* Základní styl pro stránku */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styl pro sekci člena */
+main {
+    padding: 2rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.member-details {
+    margin-bottom: 1.5rem;
+}
+
+.member-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Styl pro seznam úkolů */
+ul.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.task-list li {
+    background-color: #f9f9f9;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul.task-list li strong {
+    font-size: 1.2rem;
+    color: #007bff;
+}
+
+ul.task-list li p {
+    font-size: 1rem;
+    color: #555;
+}
+
+ul.task-list li em {
+    font-style: italic;
+    color: #777;
+}
+
+/* Návrat na hlavní stránku */
+a.back-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+a.back-button:hover {
+    background-color: #218838;
+}
