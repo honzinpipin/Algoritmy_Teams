@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member Details</title>
-    <script src="member.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="member.css">
+    <script src="member.js" defer></script> <!-- Předpokládám, že máte vlastní JS pro tuto stránku -->
 </head>
 <body>
-    <header>
-        <a href="index.html">Back to Main Page</a>
-        <h1 id="member-name"></h1>
-    </header>
-    <main>
-        <section>
-            <h2>Assigned Tasks</h2>
-            <ul id="task-list"></ul>
-        </section>
-        <section>
-            <h2>Messages</h2>
-            <h3>Received</h3>
-            <ul id="received-messages"></ul>
-            <h3>Sent</h3>
-            <ul id="sent-messages"></ul>
-        </section>
-    </main>
+
+<header>
+    <h1>Member Details</h1>
+</header>
+
+<main>
+    <!-- Zobrazí detaily člena -->
+    <section>
+        <div class="member-details">
+            <h2 id="member-name">Member Name</h2>
+            <p><strong>Role:</strong> <span id="member-role">Loading...</span></p> <!-- Dynamické zobrazení role -->
+            <p><strong>Email:</strong> <span id="member-email">example@domain.com</span></p>
+        </div>
+
+        <h2>Assigned Tasks</h2>
+        <ul class="task-list" id="task-list">
+            <!-- Dynamicky generované úkoly člena -->
+        </ul>
+
+        <!-- Tlačítko pro návrat na hlavní stránku -->
+        <a href="index.html" class="back-button">Back to Team Overview</a>
+    </section>
+</main>
+
 </body>
 </html>
