@@ -3,58 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Collaboration App</title>
-    <script src="app.js" defer></script>
+    <title>Team Management App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="calendar.js" defer></script>
+    <script src="app.js" defer></script>
+
 </head>
 <body>
-    <header>
-        <h1>Team Collaboration App</h1>
-        <button onclick="adjustDate(-1)">Previous Day</button>
-        <button onclick="adjustDate(1)">Next Day</button>
-    </header>
 
-    <main>
-        <section>
-            <h2>Team Members</h2>
-            <ul id="team-list"></ul>
-            <form id="add-member-form">
-                <label for="member-name">Member Name:</label>
-                <input type="text" id="member-name" required>
-            
-                <label for="member-role">Role:</label>
-                <select id="member-role" required>
-                    <option value="member">Member</option>
-                    <option value="teamleader">Team Leader</option>
-                </select>
-            
-                <button type="submit">Add Member</button>
-            </form>
-        </section>
+<header>
+    <h1>Team Management App</h1>
+    <div id="calendar">
+        <button id="prev-day">Previous Day</button>
+        <span id="current-date">Loading...</span>
+        <button id="next-day">Next Day</button>
+    </div>
+</header>
 
-        <section>
-            <h2>Tasks</h2>
-            <ul id="task-list"></ul>
-            <form id="add-task-form">
-                <label for="task-title">Task Title:</label>
-                <input type="text" id="task-title" required>
-            
-                <label for="task-desc">Description:</label>
-                <textarea id="task-desc" required></textarea>
-            
-                <label for="task-due-date">Due Date:</label>
-                <input type="date" id="task-due-date" required>
-            
-                <label for="task-members">Assign Members:</label>
-                <select id="task-members" multiple required>
-                    <!-- Tady budou generováni členové dynamicky -->
-                </select>
-            
-                <button type="submit">Add Task</button>
-            </form>
-        </section>
+<main>
+    <section>
+        <h2>Team Members</h2>
+        <form id="add-member-form">
+            <input type="text" id="member-name" placeholder="Member Name" required>
+            <select id="member-role" placeholder="Member role">
+                <option value="Member">Member</option>
+                <option value="Teamleader">Teamleader</option>
+            </select required>
+            <button type="submit">Add Member</button>
+        </form>
+        <ul id="team-list">
+            <!-- Team members will be dynamically added here -->
+        </ul>
+    </section>
 
-       
-    </main>
+    <section>
+        <h2>Tasks</h2>
+        <form id="add-task-form">
+            <input type="text" id="task-title" placeholder="Task Title" required>
+            <textarea id="task-desc" placeholder="Task Description" required></textarea>
+            <input type="date" id="task-due-date" required>
+            <select id="task-members" multiple required>
+                <!-- Members will be dynamically added as options -->
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+    </section>
+</main>
+
 </body>
 </html>
